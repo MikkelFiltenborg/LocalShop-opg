@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Pølsen Taastrup</title>
+        <link rel="stylesheet" href="StyleSheet.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <style>
+            body{
+              background-color: #aa3434;
+              background-image: url(img/TinaPcontact.jpg);
+              background-repeat: no-repeat;
+              background-position: 0 54px;
+              background-size: 100%;
+            }
+
+            .input{
+                text-align: right;
+                margin-right: 41%;
+            }
+
+            .choicebtn {
+                background-color: #882323;
+                color: #bbbbbb;
+                padding: 16px;
+                font-size: 16px;
+                border: none;
+            }
+
+            .drop {
+                position: relative;
+                display: inline-block;
+            }
+
+            .drop-content {
+                display: none;
+                position: absolute;
+                background-color: #333333;
+                min-width: 165px;
+                z-index: 1;
+            }
+
+            .drop-content a:hover {background-color: #aa3434}
+
+            .drop:hover .drop-content {
+                display: block;
+            }
+
+
+            
+          </style>
+
+    </head>
+    <body>
+
+        <ul class="navbar">
+            <li><a class="active" href="LocalShop.html">Home</a></li>
+            <li><a href="Menu.html">Menu</a></li>
+            <li><a href="Contact.html">Contact</a></li>
+            <li><a href="About.html">About</a></li>
+            <li style="float:right" class="dropdown">
+                <a href="find" class="dropbtn">Find Us</a>
+                <div class="dropdown-content">
+                    <a href="https://www.google.dk/maps/dir/55.65004,12.3066406/Tina's+P%C3%B8lser,+Taastrup+Hovedgade+91,+2630+Taastrup/@55.6499406,12.2993754,1760m/data=!3m2!1e3!4b1!4m9!4m8!1m1!4e1!1m5!1m1!1s0x465259bf1bfca72f:0xf5c246f43024f93!2m2!1d12.3012781!2d55.6494189?hl=da">Directions</a>
+                    <a href="https://www.google.dk/maps/place/Tina's+P%C3%B8lser/@55.6495771,12.3011662,311m/data=!3m1!1e3!4m5!3m4!1s0x465259bf1bfca72f:0xf5c246f43024f93!8m2!3d55.6494189!4d12.3012781?hl=da">Location</a>
+                </div>
+            </li>
+        </ul>
+
+        <div class="bg-txt">
+            <div style="padding:0 16px;">
+                <br>
+                <h3>Contact</h3>
+                <p>How to get in touch with us</p>
+                <br>
+                <div class="input">
+                    <label for="name">Name</label>
+                    <input type="text" name="name"><br><br>
+            
+                    <label for="email">Email</label>
+                    <input type="email" name="email"><br><br>
+            
+                    <label for="tlf">Tlf.</label>
+                    <input type="number" name="tlf"><br><br>
+            
+                    <label for="text">Notes</label>
+                    <input type="text" name="text"><br><br>
+                </div>
+                <br>
+
+                <div class="drop" style="float:none">
+                    <button class="choicebtn">Reason for contact</button>
+                    <div class="drop-content">
+                        <form style="text-align: left">
+                            <div style="color: #bbbbbb">
+                                <input type="checkbox" id="complaint" name="complaint" value="Bike">
+                                <label for="complaint"> - Complaint</label><br>
+                                <input type="checkbox" id="rental" name="rental" value="Car">
+                                <label for="rental"> - Rental</label><br>
+                                <input type="checkbox" id="job" name="job" value="Boat">
+                                <label for="job"> - Job</label><br><br>
+                                <input type="submit" value="Submit">
+                            </div>
+                        </form>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+    </body>
+</html>
+
+
